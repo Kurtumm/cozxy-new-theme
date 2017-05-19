@@ -16,20 +16,17 @@ use yii\web\AssetBundle;
  * @author Qiang Xue <qiang.xue@gmail.com>
  * @since 2.0
  */
-class CozxyAsset extends AssetBundle {
+class MyAccountAsset extends AssetBundle
+{
 
     public $sourcePath = '@app/themes/cozxy/assets';
     public $css = [
-        'css/bootstrap.min.css',
-        'css/font-awesome.min.css',
-        'css/mstyle.css',
-        'css/cozxy.css',
-        'fonts/fonts.css',
+        'css/my-account.css',
     ];
     public $js = [
-        'js/jquery.js',
-        'js/bootstrap.min.js',
-        'js/cozxy.js'
+        'js/my-account.js'
     ];
-
+    public $depends = [
+        'frontend\assets\CozxyAsset',
+    ];
 }

@@ -9,7 +9,8 @@ class SearchController extends \yii\web\Controller
     public function actionIndex()
     {
         $productCanSell = new ArrayDataProvider(['allModels'=>FakeFactory::productForSale(9)]);
-        return $this->render('index', compact('productCanSell'));
+        $category = $_GET['c'];
+        return $this->render('index', compact('productCanSell', 'category'));
     }
 
 }

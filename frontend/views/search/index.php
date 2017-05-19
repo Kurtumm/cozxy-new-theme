@@ -103,7 +103,7 @@ $(function() {
     <div class="container">
         <div class="row">
             <div class="col-xs-9">
-                <h3 class="b">PRODUCT</h3>
+                <h3 class="b"><?=strtoupper($category)?></h3>
 <!--                <p class="size18 size16-sm size14-xs">SHOWING 1-16 OF 79 RESULTS</p>-->
                 <div class="row">
                     <div class="wf-container">
